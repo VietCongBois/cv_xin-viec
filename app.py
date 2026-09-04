@@ -1,6 +1,4 @@
 import streamlit as st
-from PIL import Image
-import base64
 
 # ==================== CẤU HÌNH TRANG ====================
 st.set_page_config(
@@ -151,14 +149,10 @@ with col1:
     # Ảnh đại diện
     st.markdown("<div style='text-align: center; margin-bottom: 1rem;'>", unsafe_allow_html=True)
     st.image(
-        "/home/workdir/attachments/myFrame.jpeg",   # Đường dẫn ảnh
-        width=220,
-        use_container_width=False
+        "/home/workdir/attachments/myFrame.jpeg",   # <-- Đường dẫn ảnh
+        width=220
     )
     st.markdown("</div>", unsafe_allow_html=True)
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
     
     # Thông tin liên hệ
     st.markdown("""
@@ -203,7 +197,7 @@ with col2:
     <div class="section-card">
         <div class="section-title">🎯 Mục tiêu nghề nghiệp</div>
         <p style="line-height: 1.6; color: #2d3748;">
-            Mong muốn cơ hội làm việc tại ngân hàng để trực tiếp tiếp cận quy trình nghiệp vụ thực tế 
+            Mong muốn cơ hội thực tập tại ngân hàng để trực tiếp tiếp cận quy trình nghiệp vụ thực tế 
             và rèn luyện kỹ năng phát triển khách hàng. Qua đó, tích lũy kinh nghiệm để định hình 
             sự nghiệp trong lĩnh vực Tài chính - Ngân hàng.
         </p>
@@ -214,26 +208,24 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     
-    # Kinh nghiệm làm việc
-# Kinh nghiệm làm việc
-st.markdown("""
-<div class="section-card">
-    <div class="section-title">💼 Kinh nghiệm làm việc</div>
-    
-    <div style="margin-bottom: 1.2rem;">
-        <div class="job-title">Nhân viên Bộ phận F&B</div>
-        <div class="job-company">Khách sạn Rex</div>
-        <div class="job-company">Thực tập tại Ngân hàng VCB - Thống Nhất</div>
-        <div class="job-period">01/2025 – 10/2025</div>
+    # Kinh nghiệm làm việc (đã sửa)
+    st.markdown("""
+    <div class="section-card">
+        <div class="section-title">💼 Kinh nghiệm làm việc</div>
         
-        <ul style="margin-top: 0.8rem; padding-left: 1.2rem;">
-            <li>Thực hiện nghiệp vụ phục vụ bàn chuyên nghiệp, chỉn chu và trang trọng theo bộ tiêu chuẩn khách sạn 5 sao.</li>
-            <li>Sử dụng tiếng Anh giao tiếp hàng ngày để đón tiếp, tư vấn và chăm sóc các đối tượng khách hàng nước ngoài.</li>
-            <li>Rèn luyện tác phong làm việc nghiêm túc, tỉ mỉ, khả năng quan sát tinh tế và quản lý thời gian hiệu quả trong môi trường dịch vụ có cường độ và áp lực cao.</li>
-        </ul>
+        <div style="margin-bottom: 1.2rem;">
+            <div class="job-title">Nhân viên Bộ phận F&B</div>
+            <div class="job-company">Khách sạn Rex</div>
+            <div class="job-period">01/2025 – 10/2025</div>
+            
+            <ul style="margin-top: 0.8rem; padding-left: 1.2rem;">
+                <li>Thực hiện nghiệp vụ phục vụ bàn chuyên nghiệp, chỉn chu và trang trọng theo bộ tiêu chuẩn khách sạn 5 sao.</li>
+                <li>Sử dụng tiếng Anh giao tiếp hàng ngày để đón tiếp, tư vấn và chăm sóc các đối tượng khách hàng nước ngoài.</li>
+                <li>Rèn luyện tác phong làm việc nghiêm túc, tỉ mỉ, khả năng quan sát tinh tế và quản lý thời gian hiệu quả trong môi trường dịch vụ có cường độ và áp lực cao.</li>
+            </ul>
+        </div>
     </div>
-</div>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
     
     # Chứng chỉ
     st.markdown("""
@@ -242,7 +234,6 @@ st.markdown("""
         <ul>
             <li>Kỹ năng soạn thảo văn bản</li>
             <li>Kỹ năng bàn phím</li>
-             <li>Chứng chỉ thực tập sinh xuất sắc</li>
         </ul>
     </div>
     """, unsafe_allow_html=True)
