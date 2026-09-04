@@ -148,9 +148,7 @@ col1, col2 = st.columns([1, 2], gap="large")
 with col1:
     # Ảnh đại diện
     st.markdown("<div style='text-align: center; margin-bottom: 1rem;'>", unsafe_allow_html=True)
-    st.image(
-        "/home/workdir/attachments/myFrame.jpeg",   # <-- Đường dẫn ảnh
-        width=220
+    st.image(myFrame.jpeg", width=220)
     )
     st.markdown("</div>", unsafe_allow_html=True)
     
