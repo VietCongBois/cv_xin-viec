@@ -148,8 +148,7 @@ col1, col2 = st.columns([1, 2], gap="large")
 with col1:
     # Ảnh đại diện
     st.markdown("<div style='text-align: center; margin-bottom: 1rem;'>", unsafe_allow_html=True)
-    st.image(myFrame.jpeg", width=220)
-    )
+    st.image("myFrame.jpeg", width=220)   # Đặt file ảnh cùng thư mục với app.py
     st.markdown("</div>", unsafe_allow_html=True)
     
     # Thông tin liên hệ
@@ -206,7 +205,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     
-    # Kinh nghiệm làm việc (đã sửa)
+    # Kinh nghiệm làm việc
     st.markdown("""
     <div class="section-card">
         <div class="section-title">💼 Kinh nghiệm làm việc</div>
