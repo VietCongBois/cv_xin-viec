@@ -80,7 +80,7 @@ st.markdown("""
 st.markdown("""
     <div class="header-container">
         <div class="header-name">Lê Hoàng Hiệp</div>
-        <div class="header-title">Sinh viên năm 3 ngành Tài chính - Ngân hàng | Ứng viên Thực tập sinh</div>
+        <div class="header-title">Tốt nghiệp ngành Tài chính - Ngân hàng | Ứng viên Ngân hàng</div>
     </div>
 """, unsafe_allow_html=True)
 
@@ -113,7 +113,7 @@ with col1:
             <div class="card-heading">📞 Thông tin liên hệ</div>
             <p style="margin-bottom: 8px;">📧 lehoanghiep5805@gmail.com</p>
             <p style="margin-bottom: 8px;">📱 0896 881 851</p>
-            <p style="margin-bottom: 0;">📍 180 Trần Bá Giao, Phường An Nhơn, TP. Hồ Chí Minh</p>
+            <p style="margin-bottom: 0;">📍 350/97 Lê Đức Thọ, Phường An Nhơn, TP. Hồ Chí Minh</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -178,8 +178,10 @@ with col2:
             <ul style="line-height: 1.8; padding-left: 20px;">
                 <li>Kỹ năng soạn thảo văn bản</li>
                 <li>Kỹ năng bàn phím</li>
+                <li>Chứng chỉ thực tập sinh xuất sắc</li>
             </ul>
         </div>
+    </div>
     """, unsafe_allow_html=True)
 
     # QUÁ TRÌNH HOẠT ĐỘNG
