@@ -11,12 +11,10 @@ st.set_page_config(
 # ==================== CSS TÙY CHỈNH ====================
 st.markdown("""
 <style>
-    /* Tổng thể */
     .main {
         background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
     }
     
-    /* Header */
     .header-container {
         background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
         padding: 2.5rem 2rem;
@@ -40,7 +38,6 @@ st.markdown("""
         font-weight: 400;
     }
     
-    /* Section card */
     .section-card {
         background: white;
         border-radius: 14px;
@@ -48,12 +45,6 @@ st.markdown("""
         margin-bottom: 1.5rem;
         box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         border-left: 5px solid #2c5282;
-        transition: transform 0.2s;
-    }
-    
-    .section-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
     
     .section-title {
@@ -61,12 +52,8 @@ st.markdown("""
         font-weight: 700;
         color: #1e3a5f;
         margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
     }
     
-    /* Contact info */
     .contact-item {
         display: flex;
         align-items: center;
@@ -76,7 +63,6 @@ st.markdown("""
         color: #2d3748;
     }
     
-    /* Skills badges */
     .skill-badge {
         display: inline-block;
         background: #ebf4ff;
@@ -89,35 +75,26 @@ st.markdown("""
         border: 1px solid #bee3f8;
     }
     
-    /* Experience */
     .job-title {
         font-weight: 700;
         color: #1a365d;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        margin-bottom: 0.2rem;
     }
     
     .job-company {
         color: #2c5282;
         font-weight: 600;
+        margin-bottom: 0.2rem;
     }
     
     .job-period {
         color: #718096;
         font-size: 0.9rem;
         font-style: italic;
+        margin-bottom: 0.8rem;
     }
     
-    ul {
-        padding-left: 1.2rem;
-    }
-    
-    li {
-        margin-bottom: 0.45rem;
-        line-height: 1.5;
-        color: #2d3748;
-    }
-    
-    /* Footer */
     .footer {
         text-align: center;
         color: #718096;
@@ -126,7 +103,6 @@ st.markdown("""
         padding: 1.5rem;
     }
     
-    /* Ẩn menu Streamlit */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
@@ -148,7 +124,7 @@ col1, col2 = st.columns([1, 2], gap="large")
 with col1:
     # Ảnh đại diện
     st.markdown("<div style='text-align: center; margin-bottom: 1rem;'>", unsafe_allow_html=True)
-    st.image("myFrame.jpeg", width=220)   # Đặt file ảnh cùng thư mục với app.py
+    st.image("myFrame.jpeg", width=220)
     st.markdown("</div>", unsafe_allow_html=True)
     
     # Thông tin liên hệ
@@ -157,7 +133,7 @@ with col1:
         <div class="section-title">📞 Thông tin liên hệ</div>
         <div class="contact-item">📧 lehoanghiep5805@gmail.com</div>
         <div class="contact-item">📱 0896 881 851</div>
-        <div class="contact-item">📍 180 Trần Bá Giao, Phường An Nhơn, TP. Hồ Chí Minh</div>
+        <div class="contact-item">📍 350/97 Lê Đức Thọ, Phường An Nhơn, TP. Hồ Chí Minh</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -205,24 +181,23 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     
-    # Kinh nghiệm làm việc
+    # ========== KINH NGHIỆM LÀM VIỆC (ĐÃ SỬA AN TOÀN) ==========
     st.markdown("""
     <div class="section-card">
         <div class="section-title">💼 Kinh nghiệm làm việc</div>
-        
-        <div style="margin-bottom: 1.2rem;">
-            <div class="job-title">Nhân viên Bộ phận F&B</div>
-            <div class="job-company">Khách sạn Rex</div>
-            <div class="job-period">01/2025 – 10/2025</div>
-            
-            <ul style="margin-top: 0.8rem; padding-left: 1.2rem;">
-                <li>Thực hiện nghiệp vụ phục vụ bàn chuyên nghiệp, chỉn chu và trang trọng theo bộ tiêu chuẩn khách sạn 5 sao.</li>
-                <li>Sử dụng tiếng Anh giao tiếp hàng ngày để đón tiếp, tư vấn và chăm sóc các đối tượng khách hàng nước ngoài.</li>
-                <li>Rèn luyện tác phong làm việc nghiêm túc, tỉ mỉ, khả năng quan sát tinh tế và quản lý thời gian hiệu quả trong môi trường dịch vụ có cường độ và áp lực cao.</li>
-            </ul>
-        </div>
-    </div>
     """, unsafe_allow_html=True)
+    
+    st.markdown('<div class="job-title">Nhân viên Bộ phận F&B</div>', unsafe_allow_html=True)
+    st.markdown('<div class="job-company">Khách sạn Rex</div>', unsafe_allow_html=True)
+    st.markdown('<div class="job-period">01/2025 – 10/2025</div>', unsafe_allow_html=True)
+    
+    st.markdown("""
+    - Thực hiện nghiệp vụ phục vụ bàn chuyên nghiệp, chỉn chu và trang trọng theo bộ tiêu chuẩn khách sạn 5 sao.
+    - Sử dụng tiếng Anh giao tiếp hàng ngày để đón tiếp, tư vấn và chăm sóc các đối tượng khách hàng nước ngoài.
+    - Rèn luyện tác phong làm việc nghiêm túc, tỉ mỉ, khả năng quan sát tinh tế và quản lý thời gian hiệu quả trong môi trường dịch vụ có cường độ và áp lực cao.
+    """)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
     
     # Chứng chỉ
     st.markdown("""
