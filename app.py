@@ -91,21 +91,8 @@ col1, col2 = st.columns([1, 2.2])
 with col1:
     # PHẦN HIỂN THỊ VÀ DÁN ẢNH (Theo yêu cầu của người dùng)
     st.markdown('<div class="cv-card" style="padding:15px; text-align:center;">', unsafe_allow_html=True)
-    
-    # Ưu tiên hiển thị ảnh mặc định nếu có, hoặc cho phép tải lên
-    img_path = 'myFrame.jpg'
-    uploaded_file = st.file_uploader("Đổi ảnh đại diện", type=['jpg', 'jpeg', 'png'], label_visibility="collapsed")
-    
-    if uploaded_file is not None:
-        image = Image.open(uploaded_file)
-        st.image(image, use_container_width=True)
-    elif os.path.exists(img_path):
-        image = Image.open(img_path)
-        st.image(image, use_container_width=True)
-    else:
-        st.info("Chưa tìm thấy ảnh. Vui lòng tải ảnh lên.")
-        
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.image("myFrame.jpeg", width=220)
+    st.markdown("</div>", unsafe_allow_html=True)
 
     # THÔNG TIN LIÊN HỆ
     st.markdown("""
